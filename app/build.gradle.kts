@@ -1,43 +1,66 @@
 plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+    androidApplication
+    jetbrainKotlinAndroid
 }
 
 android {
-    compileSdk 32
+    compileSdk = appConfig.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.example.readermanga"
-        minSdk 21
-        targetSdk 32
-        versionCode 1
-        versionName "1.0"
+        applicationId = "com.example.readermanga"
+        minSdk = appConfig.minSdkVersion
+        targetSdk = appConfig.targetSdkVersion
+        versionCode = appConfig.versionCode
+        versionName = appConfig.versionName
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+    buildFeatures { viewBinding = true }
 }
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.6.0'
-    implementation 'com.google.android.material:material:1.7.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    /** UI **/
+    implementation(deps.androidx.coreKtx)
+    implementation (deps.androidx.material)
+    implementation (deps.androidx.appCompat)
+    implementation (deps.androidx.recyclerView)
+    implementation(deps.androidx.constraintLayout)
+
+    /** Coroutines **/
+    implementation(deps.coroutines.core)
+
+    /** Koin **/
+    implementation(deps.koin.koinCore)
+    implementation(deps.koin.koinAndroid)
+
+    /** Retrofit**/
+    implementation(deps.squareup.retrofit)
+    implementation(deps.squareup.loggingInterceptor)
+    implementation(deps.squareup.retrofitConverterGson)
+
+    /** Navigation **/
+    implementation(deps.jetpackNavigation.fragmentNavigation)
+
+    /** Lifecycle **/
+    implementation(deps.lifecycle.viewModelKtx)
+    implementation(deps.lifecycle.runtimeKtx)
 }
