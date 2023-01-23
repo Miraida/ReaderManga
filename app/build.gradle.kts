@@ -38,6 +38,10 @@ android {
 
 dependencies {
 
+    /** Module **/
+    implementation(core)
+    implementation(core_ui)
+
     /** UI **/
     implementation(deps.androidx.coreKtx)
     implementation (deps.androidx.material)
