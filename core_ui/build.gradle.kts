@@ -30,14 +30,21 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
+    implementation(core)
 
     implementation(deps.androidx.coreKtx)
     implementation(deps.androidx.appCompat)
     implementation(deps.androidx.material)
 
-    /** Glide**/
+    /** Glide **/
     implementation(deps.glide)
+
+    /** Nav **/
+    implementation(deps.jetpackNavigation.uiNavigation)
 }

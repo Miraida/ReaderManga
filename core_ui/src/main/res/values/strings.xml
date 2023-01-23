@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Auth Error-->
+    <string name="error_server">Ошибка сервера!</string>
+    <string name="error_time_out_connection">Превышено время ожидания!</string>
+    <string name="error_unknown">Неизвестная ошибка!</string>
+    <string name="sign_login_collision">Указанный логин уже заняты!</string>
+    <string name="confirm_code_invalid">Неверный код подтвеждения</string>
+    <string name="error_input_error">Ошибка!\nПроверьте правильность введенных данных</string>
+    <string name="error_short_password">Пароль должен содержать минимум 4 символа</string>
+    <string name="error_input_password">Введите пароль!</string>
+    <string name="error_input_user_name">Введите имя!</string>
+    <string name="sign_canceled">Отменено</string>
+    <string name="too_many_requests">"Слишком много запросов,\nпопробуйте попозже"</string>
+    <string name="send_error_try_again">"Ошибка отправки,\nпопробуйте еще раз"</string>
+    <string name="sign_login_not_found">Пользователь не найден</string>
+    <string name="error_invalid_credentials">Неверный логин или пароль!</string>
+    <string name="error_no_connection">Нет подключения к интернету,\nпожалуйста, проверьте\nнастройки интернета</string>
+
+</resources>
