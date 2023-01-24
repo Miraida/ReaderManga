@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.sign_in.SignInFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signInUsernameInput"
+        style="@style/Text_Input_Layout_style"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/signInUsername"
+            style="@style/MainInput_EditText"
+            android:background="@drawable/bg_main_edt"
+            android:hint="@string/username"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signInPasswordInput"
+        style="@style/Text_Input_Layout_style"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInUsernameInput">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/signInPassword"
+            style="@style/MainInput_EditText"
+            android:background="@drawable/bg_main_edt"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/sign_in"
+        style="@style/MainColoredButton"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_main_btn"
+        android:text="@string/sign_in"
+        app:layout_constraintBottom_toTopOf="@+id/signNotAccount"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/signNotAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/not_account"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

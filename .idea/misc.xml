@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Mira/AndroidStudioProjects/ReaderManga/app/src/main/res/layout/fragment_sign.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Mira/AndroidStudioProjects/ReaderManga/app/src/main/res/layout/fragment_sign_in.xml" value="0.25" />
+        <entry key="..\:/Users/Mira/AndroidStudioProjects/ReaderManga/app/src/main/res/layout/fragment_sign_or_register.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Mira/AndroidStudioProjects/ReaderManga/app/src/main/res/layout/fragment_sign_up.xml" value="0.22" />
+        <entry key="..\:/Users/Mira/AndroidStudioProjects/ReaderManga/app/src/main/res/layout/fragment_splash.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Mira/AndroidStudioProjects/ReaderManga/core_ui/src/main/res/drawable/bg_edt.xml" value="0.116" />
+        <entry key="..\:/Users/Mira/AndroidStudioProjects/ReaderManga/core_ui/src/main/res/drawable/bg_grey_edt.xml" value="0.116" />
+        <entry key="..\:/Users/Mira/AndroidStudioProjects/ReaderManga/core_ui/src/main/res/drawable/bg_line_btn.xml" value="0.116" />
+        <entry key="..\:/Users/Mira/AndroidStudioProjects/ReaderManga/core_ui/src/main/res/drawable/bg_main_btn.xml" value="0.116" />
+        <entry key="..\:/Users/Mira/AndroidStudioProjects/ReaderManga/core_ui/src/main/res/drawable/bg_main_edt.xml" value="0.116" />
+        <entry key="..\:/Users/Mira/AndroidStudioProjects/ReaderManga/core_ui/src/main/res/drawable/ic_check_circle_outline.xml" value="0.1045" />
         <entry key="..\:/Users/Mira/AndroidStudioProjects/ReaderManga/core_ui/src/main/res/layout/custom_toast_error.xml" value="0.1" />
       </map>
     </option>

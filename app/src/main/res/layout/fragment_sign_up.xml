@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.auth.sign_up.SignUpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/registerCard"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="25dp"
+            android:elevation="0dp"
+            app:cardCornerRadius="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/register_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/register_add_iv"
+            style="@style/H1_text_style"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_photo"
+            android:textColor="@color/main_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/registerCard" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_username_input"
+            style="@style/Text_Input_Layout_style"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_add_iv">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/register_username"
+                style="@style/MainInput_EditText"
+                android:background="@drawable/bg_main_edt"
+                android:hint="@string/username"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_nickname_input"
+            style="@style/Text_Input_Layout_style"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_username_input">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/register_nickname"
+                style="@style/MainInput_EditText"
+                android:background="@drawable/bg_main_edt"
+                android:hint="@string/nickname"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_password_input"
+            style="@style/Text_Input_Layout_style"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_nickname_input">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/register_password"
+                style="@style/MainInput_EditText"
+                android:background="@drawable/bg_main_edt"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_confirm_password_input"
+            style="@style/Text_Input_Layout_style"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_password_input">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/register_confirm_password"
+                style="@style/MainInput_EditText"
+                android:background="@drawable/bg_main_edt"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/register_btn"
+            style="@style/MainColoredButton"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_main_btn"
+            android:text="@string/sign_in"
+            app:layout_constraintBottom_toTopOf="@+id/register_have_account"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/register_have_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/have_account"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
