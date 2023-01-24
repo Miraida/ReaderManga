@@ -5,12 +5,12 @@ import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
 object appConfig {
-    const val compileSdkVersion = 32
-    const val buildToolsVersion = "32"
+    const val compileSdkVersion = 33
+    const val buildToolsVersion = "33"
 
     const val applicationId = "com.example.mangaread"
     const val minSdkVersion = 21
-    const val targetSdkVersion = 32
+    const val targetSdkVersion = 33
 
     private const val MAJOR = 1
     private const val MINOR = 0

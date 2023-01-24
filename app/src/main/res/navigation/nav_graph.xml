@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.readermanga.ui.screen.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/signOrRegisterFragment"
+        android:name="com.example.readermanga.ui.auth.sign_or_register.SignOrRegisterFragment"
+        android:label="fragment_sign_or_register"
+        tools:layout="@layout/fragment_sign_or_register">
+        <deepLink app:uri="https://reader-mango/sign-or-register" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.readermanga.ui.auth.sign_in.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in">
+        <deepLink app:uri="https://reader-mango/sign-in" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.readermanga.ui.auth.sign_up.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up">
+        <deepLink app:uri="https://reader-mango/sign-up" />
+    </fragment>
+    <fragment
+        android:id="@+id/signFragment"
+        android:name="com.example.readermanga.ui.auth.sign.SignFragment"
+        android:label="fragment_sign"
+        tools:layout="@layout/fragment_sign">
+        <argument
+            android:name="number"
+            app:argType="string" />
+        <deepLink app:uri="https://reader-mango/sign?sign={number}" />
+    </fragment>
+
+</navigation>
